@@ -1,6 +1,8 @@
 appdirs==1.4.2
 Django==1.10.6
 djangorestframework==3.6.1
+olefile==0.44
 packaging==16.8
+Pillow==4.0.0
 pyparsing==2.1.10
 six==1.10.0

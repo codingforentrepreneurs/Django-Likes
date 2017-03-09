@@ -12,3 +12,5 @@ Subscribe to our YouTube channel: [http://joincfe.com/youtube/](http://joincfe.c
 
 ### Code History
 [Base project setup](../../tree/8be3ff8ffc5fd3922a8e27da156c093065830707)
+
+[Django Likes](../../tree/6179763b6689e1fcb80ce87e1008a84517a52c41)

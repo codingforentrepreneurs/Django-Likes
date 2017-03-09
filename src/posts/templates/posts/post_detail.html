@@ -24,6 +24,7 @@
 
 
 <p>Read time: {% if instance.read_time <= 1 %} < 1 Minute {% else %}{{ instance.read_time }} minutes {% endif %}</p>
+<p><a class='like-btn' data-href='{{ instance.get_api_like_url }}' data-likes='{{ instance.likes.count }}' href='{{ instance.get_like_url }}'>{{ instance.likes.count }} Like</a></p>
 {% if instance.user.get_full_name %}
 <p>Author: {{ instance.user.get_full_name }}</p>
 {% endif %}

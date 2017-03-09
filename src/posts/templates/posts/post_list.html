@@ -25,6 +25,7 @@
       <div class="caption post-detail-item">
         {% if obj.draft %}<h3>Staff only: Draft</h3>{% endif %} {% if obj.publish > today %}<h3>Staff Only: Future Post</h3>{% endif %}
         <h3><a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a> <small>{{ obj.publish }}</small></h3>
+        <p><a class='like-btn' data-href='{{ obj.get_api_like_url }}' data-likes='{{ obj.likes.count }}'  href='{{ obj.get_like_url }}'>{{ obj.likes.count }} Like</a></p>
         {% if obj.user.get_full_name %}<p>Author: {{ obj.user.get_full_name }}</p>{% endif %}
         {{ obj.get_markdown|truncatechars_html:120 }}
         <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">View</a></p>

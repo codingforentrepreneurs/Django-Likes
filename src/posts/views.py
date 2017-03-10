@@ -101,7 +101,8 @@ class PostLikeAPIToggle(APIView):
             updated = True
         data = {
             "updated": updated,
-            "liked": liked
+            "liked": liked,
+            "like_count": obj.likes.count(),
         }
         return Response(data)
 

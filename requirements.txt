@@ -6,3 +6,4 @@ packaging==16.8
 Pillow==4.0.0
 pyparsing==2.1.10
 six==1.10.0
+django-crispy-forms==1.6.1

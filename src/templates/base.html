@@ -38,13 +38,7 @@
             success: function(data){
               console.log(data)
               var newLikes;
-              if (data.liked){
-                  updateText(this_, addLike, "Unlike")
-              } else {
-                  updateText(this_, removeLike, "Like")
-                  // remove one like
-              }
-
+              updateText(this_, data.like_count, "Like")
             }, error: function(error){
               console.log(error)
               console.log("error")

@@ -40,8 +40,10 @@
               var newLikes;
               if (data.liked){
                   updateText(this_, addLike, "Unlike")
+                  this_.attr("data-likes", addLike)
               } else {
                   updateText(this_, removeLike, "Like")
+                  this_.attr("data-likes", removeLike)
                   // remove one like
               }
 
